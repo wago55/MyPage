@@ -1,33 +1,36 @@
 import React from "react"
-
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import {Typography} from "@mui/material";
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
+import {ChakraProvider, Flex, Spacer, Box, Text, Center} from '@chakra-ui/react'
+import { FaGithub } from "react-icons/fa";
 
 
 export const Header = () => {
     return (
-        <div className={"header"}>
-            <AppBar position="static">
-                <Toolbar>
-                    <Box sx={{flexGrow: 1}}>
-                        <Grid container spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography textAlign={"right"} >
-                                    MyPage
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <button>
-                                    Works
-                                </button>
-                            </Grid>
-                        </Grid>
+        <ChakraProvider>
+            <Flex bg="#edf2f7" w="100vw" h="100vh">
+                <Flex
+                    as="header"
+                    position="fixed"
+                    top={0}
+                    width="full"
+                    shadow="sm"
+                    w="100vw" h="10vh"
+                    bg="#20BED3"
+                >
+                    <Spacer></Spacer>
+                    <Box m="auto" w="10vw">
+                        <Center>
+                            <FaGithub color="white" size="3em" />
+                        </Center>
                     </Box>
-                </Toolbar>
-            </AppBar>
-        </div>
+                    <Box m="auto" w="10vw">
+                        <Center>
+                            <Text　fontSize="3xl" color="White">Works</Text>
+                        </Center>
+                    </Box>
+                    <Spacer></Spacer>
+                </Flex>
+            </Flex>
+        </ChakraProvider>
+
     )
 }

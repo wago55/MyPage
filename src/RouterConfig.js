@@ -13,7 +13,7 @@ export const RouterConfig = () => {
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route index element={<Home />} />
+                <Route path="MyPage" element={<Home />} />
                 <Route path="works" element={<Works />} />
             </Routes>
         </BrowserRouter>

@@ -27,7 +27,7 @@ export const Header = () => {
                         {/*<Box>*/}
                         <Center>
                             <Flex >
-                                <Link to="/">
+                                <Link to="MyPage">
                                     <AiFillHome color="white" size="2.5em"/>
                                 </Link>
                                 <Box m="0.5em"></Box>

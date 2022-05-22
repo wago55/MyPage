@@ -1,45 +1,46 @@
 import React from "react"
 import { Link } from "react-router-dom";
 
-import {ChakraProvider, Flex, Spacer, Box, Text, Center} from '@chakra-ui/react'
+import {ChakraProvider, Flex, Spacer, Box, Text, Center, SimpleGrid} from '@chakra-ui/react'
 import { FaGithub } from "react-icons/fa";
+import { AiFillHome } from "react-icons/ai";
 import {RouterConfig} from "../RouterConfig";
 
 
 export const Header = () => {
     return (
             <ChakraProvider>
-                <Flex>
+                {/*<Flex>*/}
                     <Flex
                         as="header"
                         position="fixed"
                         top={0}
                         width="full"
                         shadow="sm"
-                        w="100vw" h="10vh"
+                        w="100vw"
+                        h="6rem"
                         bg="#20BED3"
                         zIndex={"sticky"}
+                        justifyContent="center"
                     >
-                        <Spacer></Spacer>
-                        <Box m="auto" w="10vw">
-                            <Center>
+                        {/*<Spacer></Spacer>*/}
+                        {/*<Box>*/}
+                        <Center>
+                            <Flex >
                                 <Link to="/">
-                                    <FaGithub color="white" size="3em" />
+                                    <AiFillHome color="white" size="2.5em"/>
                                 </Link>
-                            </Center>
-                        </Box>
-                        <Box w="2rem">
-                        </Box>
-                        <Box m="auto" w="10vw">
-                            <Center>
+                                <Box m="0.5em"></Box>
                                 <Link to="works">
-                                    <Text　fontSize="3xl" color="White">Works</Text>
+                                    <Text　fontSize="2em" color="White">Works</Text>
                                 </Link>
-                            </Center>
-                        </Box>
-                        <Spacer></Spacer>
+                            </Flex>
+                        </Center>
+
+                        {/*</Box>*/}
+                        {/*<Spacer></Spacer>*/}
                     </Flex>
-                </Flex>
+                {/*</Flex>*/}
             </ChakraProvider>
     );
 }

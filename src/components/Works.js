@@ -14,13 +14,13 @@ export const Works = () => {
             <ChakraProvider>
                     <Flex bg="#252525">
 
-                        <SimpleGrid mt={"8rem"} mb="2rem" mx="auto" mr="1rem" ml="1rem" columns={2} spacing={5}>
+                        <SimpleGrid mt={"8rem"} mb="2rem" mx="auto" mr="1rem" ml="1rem" columns={{base:1, sm:1, md:2}} spacing={5}>
 
                             <Box mb="2rem">
                                 <Box p="1rem" as="Button" w="100%" h="100%">
                                     <Image m="auto" borderRadius='lg' w="95%" h="95%" transition="0.3s" _hover={{transform:"scale(1.05,1.05)", transition: "0.3s "}} src={dail} />
                                 </Box>
-                                <Center color="white" pt="0.5rem">写真共有アプリ "Dail"</Center>
+                                <Center color={"white"} pt="0.5rem" >写真共有アプリ "Dail"</Center>
                             </Box>
 
                             <Box mb="2rem" >

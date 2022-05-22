@@ -18,7 +18,6 @@ import profile from "../pic/profile.jpg"
 // import backgroundimg from "../pic/randscape.jpg";
 import { SiQiita } from 'react-icons/si';
 import { FaGithub, FaTwitter } from "react-icons/fa";
-import {Link} from "react-router-dom";
 
 // const styles = {
 //     container: css({

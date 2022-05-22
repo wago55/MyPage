@@ -18,6 +18,7 @@ export const Header = () => {
                         shadow="sm"
                         w="100vw" h="10vh"
                         bg="#20BED3"
+                        zIndex={"sticky"}
                     >
                         <Spacer></Spacer>
                         <Box m="auto" w="10vw">
@@ -26,6 +27,8 @@ export const Header = () => {
                                     <FaGithub color="white" size="3em" />
                                 </Link>
                             </Center>
+                        </Box>
+                        <Box w="2rem">
                         </Box>
                         <Box m="auto" w="10vw">
                             <Center>

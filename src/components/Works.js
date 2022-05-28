@@ -1,5 +1,5 @@
 import React from "react"
-import {ChakraProvider, Flex, SimpleGrid, Box, Image, Center, Spacer} from '@chakra-ui/react'
+import {ChakraProvider, Flex, SimpleGrid, Box, Image, Center, Spacer, useBreakpointValue} from '@chakra-ui/react'
 
 import dail from "../pic/dail_re.png"
 import chat from "../pic/chat_re.png"
@@ -9,12 +9,14 @@ import stream from "../pic/stream_re.png"
 import server from "../pic/server_re.png"
 
 export const Works = () => {
+    // const columns = useBreakpointValue({base:1, sm:1, md:2})
+
     return (
         <>
             <ChakraProvider>
                     <Flex bg="#252525">
 
-                        <SimpleGrid mt={"8rem"} mb="2rem" mx="auto" mr="1rem" ml="1rem" columns={{base:1, sm:1, md:2}} spacing={5}>
+                        <SimpleGrid mt={"8rem"} mb="2rem" mx="auto" mr="1rem" ml="1rem" columns={{base:1, lg: 2}} spacing={4}>
 
                             <Box mb="2rem">
                                 <Box p="1rem" as="Button" w="100%" h="100%">
